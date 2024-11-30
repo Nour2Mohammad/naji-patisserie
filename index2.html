@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style2.css">
+    <title>منتجات ناجي</title>
+</head>
+<body>
+    <div class="photo"></div>
+    <div class="search-box">
+        <div class="row">
+            <input type="text" id="input-box" placeholder="ابحث هنا" autocomplete="off">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="result-box">
+        </div>
+    </div>
+    <div class="container1">
+        <div class="filter-buttons">
+            <button class="active" data-name="all">الكل</button>
+            <button data-name="صبيان">صبيان</button>
+            <button data-name="بنات">بنات</button>
+            <button data-name="أطفال">أطفال</button>
+            <button data-name="حب">حب</button>
+            <button data-name="صداقة">صداقة</button>
+            <button data-name="مهن">مهن</button>
+            <button data-name="رياضة">رياضة</button>
+            <button data-name="دينية">دينية</button>
+            <button data-name="مشكل">مشكل</button>
+        </div>
+    </div>
+    <div class="container" id="products-container">
+        <div class="product-list" id="product-list">
+        </div>
+    </div>
+        <!--footer section-->
+        <footer class="footer-section">
+            <p>جميع الحقوق محفوظة لشركة ناجي 2024</p>
+            <div class="social">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+        </footer>
+<script src="./script2.js"></script>
+</body>
+</html>

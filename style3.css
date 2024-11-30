@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Tajawal", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    scroll-behavior: smooth;
+}
+:root{
+    --gold-color:#d4af37;
+    --lulu-color:#eae0c8;
+    --background-color:rgba(0, 0, 0, 0.956);
+}
+body{
+    background-color: var(--lulu-color);
+}
+
+.photo{
+    width: 300px;
+    height: 300px;
+    background-image: url(./Untitled-12.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-name: photo;
+    animation-delay: 1s;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    margin:auto;
+
+}
+@keyframes photo{
+    0%{
+        opacity: 0;
+        transform: rotateY(-90deg);
+    }
+    50%{
+        background-image: url(./Untitled-22.png);
+    }
+}
+.search-box{
+    width: 600px;
+    background-color: var(--lulu-color);
+    margin: 5px auto  0;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px var(--gold-color);
+}
+.row{
+    display: flex;
+    align-items: center;
+    padding: 10px 40px;
+}
+.search-box .row input{
+    flex: 1;
+    height: 50px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    color: var(--gold-color);
+}
+button{
+    background: transparent;
+    border: 0;
+    outline: 0;
+}
+button .fa-solid{
+    width: 30px;
+    color: var(--gold-color);
+    font-size: 22px;
+    cursor: pointer;
+}
+::placeholder{
+    color: var(--gold-color);
+}
+.result-box ul{
+    border-top: 1px solid var(--gold-color);
+    padding: 15px 10px;
+}
+.result-box ul li{
+    list-style: none;
+    border-radius: 3px;
+    padding: 15px 10px ;cursor: pointer;
+    color:var(--gold-color);
+}
+.result-box ul li:hover{
+    background-color: var(--lulu-color);
+}
+.result-box{
+    max-height: 300px;
+    overflow-y: scroll;
+}
+.container{
+    max-width: 800px;
+    margin: auto;
+}
+.product-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.product{
+    border: 1px solid var(--lulu-color);
+    margin: 10px;
+    padding: 20px;
+    width: calc(33%-40px);
+    box-shadow: 0 5px 15px var(--gold-color);
+    flex-basis: 200px;
+    border-radius: 50px;
+
+}
+.product.hide{
+    display: none;
+}
+.product img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 22px 8px 22px 8px;
+    object-fit: cover;
+}
+.product h2{
+    color: var(--gold-color);
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px auto;
+}
+.product p{
+    color: #555;
+    font-size: 18px;
+}
+.categores{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--gold-color);
+    margin: 20px 0px;
+}
+.categores h3{
+    font-size: 22px;
+}
+.categores .categore{
+    display: flex;
+    flex-direction: row
+}
+.categores .categore div{
+    margin-right: 19px;
+}
+.container1{
+    position: relative;
+    max-width: 1350px;
+    width: 700px;
+    margin: 20px auto;
+}
+.filter-buttons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+
+}
+button{
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    box-shadow: 0 0 10px rgb(0, 0,0,0.05);
+    border-radius: 6px;
+    cursor: pointer;
+}
+button.active{
+    background-color: var(--gold-color);
+    color: white;
+}
+.cntatainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-section{
+    background-color: var(--gold-color);
+    color: var(--lulu-color);
+    height: 15vh;
+    margin-top: 5rem;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-section p{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.footer-section .social{
+    margin-bottom: 2rem;
+}
+.footer-section .social i{
+    padding: 0 0.5rem;
+    font-size: 1.6rem;
+
+}
+.footer-section .social i:hover{
+    color: var(--lulu-color);
+    cursor: pointer;
+}
+@media (max-width: 700px) {
+    .search-box{
+        width: 400px;
+        margin-top: -40px ;
+    }
+    .search-box{
+        width: 400px;
+        margin-top: -40px ;
+    }
+    .filter-buttons{
+        width: 400px;
+        margin-right: 25px;
+    }
+}
+
